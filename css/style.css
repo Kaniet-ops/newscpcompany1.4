@@ -34,7 +34,7 @@ html {
   
 }
 body {
-  height: 100vh;
+  height: auto;
 }
 
 a {
@@ -64,10 +64,14 @@ button {
 .menu__container{
   display: flex;
   flex-direction: column;
-  min-height: 1100px;
+  min-height: 100vh;
 
 }
 .button-burger{
+  background-image: url(../img/burger.svg);
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
   display: flex;
   background-color: #fff;
   cursor: pointer;
@@ -76,6 +80,10 @@ button {
   opacity: 0.6;
 }
 .button-search{
+  background-image: url(../img/search.svg);
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
   display: flex;
   background-color: #fff;
   cursor: pointer;
@@ -91,6 +99,14 @@ button {
   height: 88px;
   padding: 0 25px;
   flex-shrink: 0;
+  border-bottom: 1px solid #D9FFF5;
+  background-color: #fff;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 50;
 }
 
 .menu-logo{
@@ -121,6 +137,12 @@ button {
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
 }
+
+.main-menu__link:hover {
+  border-color: #D9FFF5;
+  background-color: #fff;
+}
+
 .main-menu__link_selected{
   color: #7E7E82;
 }
@@ -169,6 +191,7 @@ button {
   padding-left:0;
 }
 .menu-button{
+
   background-color: #fff;
 }
 
@@ -178,6 +201,35 @@ button {
   flex-shrink: 0;
   padding: 0 24px;
 }
+
+
+.phone-button{
+  background-image: url(../img/phone.svg);
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+}
+
+.chat-button{
+  background-image: url(../img/chat.svg);
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+}
+
+.profile-button{
+  background-image: url(../img/profile.svg);
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.profile-button:hover{
+  opacity: 0.6;
+}
+
+
 .menu__mail-link{
   padding-top: 16px;
   padding-bottom: 16px;
