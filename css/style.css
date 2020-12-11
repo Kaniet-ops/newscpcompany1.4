@@ -116,7 +116,6 @@ button {
 }
 .main-menu__list{
   font-family: inherit;
-  height: 24px;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
@@ -198,7 +197,7 @@ button {
 .menu__footer{
   display: flex;
   flex-direction: column;
-  flex-shrink: 0;
+  align-content: flex-start;
   padding: 0 24px;
 }
 
@@ -253,6 +252,10 @@ button {
 }
 .language-item:first-child{
   padding-left: 0;
+}
+
+.language-link{
+  cursor: pointer;
 }
 .language-link_selected{
   color:#7E7E82;
