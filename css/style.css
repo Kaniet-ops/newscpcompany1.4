@@ -28,6 +28,11 @@
   box-sizing: border-box; 
 }
 
+::-webkit-scrollbar{
+width: 0;
+
+}
+
 html {
   font-family: "TT Lakes", sans-serif;
   color: #1B1C21;
